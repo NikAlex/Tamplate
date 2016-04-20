@@ -167,8 +167,8 @@ int Matrix<SomeValueType>::Columns() const
 {
 	return m;
 }
-template < typename SomeValueType>
-ostream &operator << (ostream &os, const Matrix<SomeValueType> &temp)
+template < typename T>
+ostream &operator << (ostream &os, const Matrix<T> &temp)
 {
 	for (int i = 0; i < temp.n; i++)
 	{
@@ -180,8 +180,8 @@ ostream &operator << (ostream &os, const Matrix<SomeValueType> &temp)
 	}
 	return os;
 }
-template < typename SomeValueType>
-istream &operator >> (istream &input, Matrix<SomeValueType> &matr)
+template < typename T>
+istream &operator >> (istream &input, Matrix<T> &matr)
 {
     for (int i = 0; i < matr.n; i++) 
     {
